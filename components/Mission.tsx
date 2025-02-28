@@ -87,7 +87,7 @@ export default function Mission() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="absolute -top-[90px] sm:-top-[50px]"
+        className="absolute bottom-full  sm:-top-[50px]"
       >
         <path
           fill="#F9F9F9"
