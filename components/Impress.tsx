@@ -22,6 +22,7 @@ export default function Impress() {
   const arrRef = [content1, content2, content3, content4, content5];
 
   useGSAP(() => {
+    const isMobile = window.innerWidth <= 640;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: impressCon.current,
@@ -33,7 +34,7 @@ export default function Impress() {
     tl.to(
       impressL.current,
       {
-        y: 950,
+        y: isMobile ? 0 : 950,
         duration: 0.5,
       },
       "a"
@@ -64,7 +65,7 @@ export default function Impress() {
 
   return (
     <div className="impress bg-white relative w-full min-h-[54rem] h-fit overflow-hidden ">
-      <div className="px-4 md:px-6.2 w-full h-fit max-sm:pb-14 pb-32 pt-10 sm:pt-6.2 flex max-sm:flex-col sm:justify-between">
+      <div className="px-4 md:px-6.2 w-full h-fit max-sm:pb-10 pb-32 pt-10 sm:pt-6.2 flex max-sm:flex-col sm:justify-between">
         <div
           ref={impressL}
           className="impress-left sm:max-w-[50%] w-full flex flex-col gap-4"
@@ -94,7 +95,7 @@ export default function Impress() {
           {impressData.map((item, index) => (
             <div
               key={item.id}
-              className="flex items-center max-sm:justify-center gap-4 sm:gap-[3.88rem] h-36 sm:h-[15rem] sm:border-l-[1px] sm:border-b-[1px] sm:border-solid sm:border-[#EDEDED] sm:ps-12 "
+              className="flex items-center  max-sm:justify-start gap-4 sm:gap-[3.88rem] h-32 sm:h-[15rem] sm:border-l-[1px] sm:border-b-[1px] sm:border-solid sm:border-[#EDEDED] sm:ps-12 "
             >
               <div className="w-20 h-20 sm:w-36 sm:h-36 rounded-full  relative flex justify-center items-center overflow-hidden shadow-lg">
                 <div className="absolute w-20 h-20 sm:w-36 sm:h-36 rounded-full top-0 left-0 right-0 bg-[#FBFBFB] "></div>

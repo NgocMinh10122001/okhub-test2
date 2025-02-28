@@ -82,7 +82,7 @@ export default function Mission() {
   return (
     <div
       ref={missionCon}
-      className="mission bg-white h-fit min-h-[54rem] relative sm:pt-40"
+      className="mission bg-white h-fit min-h-[54rem]  relative sm:pt-40"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -130,15 +130,15 @@ export default function Mission() {
         </p>
       </div>
       <div className="mission-carousel bg-f9 px-4 md:ps-[14.3rem] md:pe-6.2 gap-16 flex max-md:flex-col-reverse md:justify-between max-md:items-center py-[5.5rem] max-sm:pb-12">
-        <div className="mission-carousel-ct flex flex-col">
+        <div className="mission-carousel-ct flex flex-col gap-6">
           {dataMission.map((item, index) => (
             <div
               key={item.id}
-              className="flex items-center justify-around roll"
+              className="flex max-sm:items-center max-sm:gap-6 max-sm:flex-col-reverse items-center justify-around roll"
             >
               <div
                 ref={arrRef[index]}
-                className="flex flex-col gap-[0.625rem] max-w-[25%] opacity-50 roll-text"
+                className="flex flex-col gap-2 sm:gap-[0.625rem] sm:max-w-[25%] opacity-50 roll-text"
               >
                 <div className="max-w-full w-fit">
                   <svg
@@ -175,7 +175,9 @@ export default function Mission() {
                 width={720}
                 height={480}
                 style={{ objectFit: "cover" }}
-                className={`rounded-md overflow-hidden max-w-[65%] w-full h-full opacity-0 roll-img`}
+                className={`rounded-md overflow-hidden max-w-[65%] w-full h-full opacity-0 roll-img ${
+                  item.id === "1" ? "" : "max-sm:hidden"
+                }`}
               />
             </div>
           ))}
