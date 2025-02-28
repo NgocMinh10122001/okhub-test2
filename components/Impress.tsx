@@ -22,7 +22,6 @@ export default function Impress() {
   const arrRef = [content1, content2, content3, content4, content5];
 
   useGSAP(() => {
-    const isMobile = window.innerWidth <= 640;
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: impressCon.current,
@@ -34,7 +33,7 @@ export default function Impress() {
     tl.to(
       impressL.current,
       {
-        y: isMobile ? 0 : 950,
+        y: 950,
         duration: 0.5,
       },
       "a"
@@ -68,7 +67,7 @@ export default function Impress() {
       <div className="px-4 md:px-6.2 w-full h-fit max-sm:pb-10 pb-32 pt-10 sm:pt-6.2 flex max-sm:flex-col sm:justify-between">
         <div
           ref={impressL}
-          className="impress-left sm:max-w-[50%] w-full flex flex-col gap-4"
+          className="impress-left max-sm:hidden sm:max-w-[50%] w-full flex flex-col gap-4"
         >
           <div className="flex items-center gap-2 font-inter text-0.875 md:text-base font-semibold not-italic leading-150 tracking-0.01  text-cus-blue uppercase">
             <svg
@@ -90,6 +89,28 @@ export default function Impress() {
             vượng đích thực cho những Người đồng hành và tạo lập di sản xứng tầm
             cho thế hệ tương lai.{" "}
           </p>
+          <div className="impress-left-mb sm:hidden sm:max-w-[50%] w-full flex flex-col gap-4">
+            <div className="flex items-center gap-2 font-inter text-0.875 md:text-base font-semibold not-italic leading-150 tracking-0.01  text-cus-blue uppercase">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="6"
+                height="7"
+                viewBox="0 0 6 7"
+                fill="none"
+              >
+                <circle cx="3" cy="3.5" r="3" fill="#165BB8" />
+              </svg>
+              <p>LĨNH VỰC ĐẦU TƯ</p>
+            </div>
+            <h1 className="w-[38.5rem] max-w-full font-quicksand text-[2rem] sm:text-[5.5rem] not-italic leading-120 font-bold tracking-[-0.08rem] rainbow-text">
+              Dấu ấn Ami&M
+            </h1>
+            <p className="w-[30rem] text-cus-black max-w-full font-inter text-0.875 sm:text-lg font-normal leading-150 tracking-0.00875 sm:-tracking-0.0225">
+              Với hệ sinh thái tối ưu, Ami&M truyền cảm hứng xây dựng sự thịnh
+              vượng đích thực cho những Người đồng hành và tạo lập di sản xứng
+              tầm cho thế hệ tương lai.{" "}
+            </p>
+          </div>
         </div>
         <div ref={impressCon} className="impress-right sm:max-w-[50%] w-full">
           {impressData.map((item, index) => (
