@@ -20,8 +20,8 @@ export default function Friendly() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: text.current,
-          start: "bottom center",
-          end: "250% center",
+          start: "top center",
+          end: "bottom center",
           scrub: true,
           markers: false,
         },
