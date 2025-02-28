@@ -40,26 +40,26 @@ export const impressData = [
   {
     id: 2,
     icon: "/impress-i2.png",
-    sale: "686 tỷ",
-    title: "Tổng tài sản và Vốn chủ sở hữu",
+    sale: "93.5 tỷ",
+    title: "Doanh thu thuần",
   },
   {
     id: 3,
     icon: "/impress-i5.png",
-    sale: "686 tỷ",
-    title: "Tổng tài sản và Vốn chủ sở hữu",
+    sale: "24,6 tỷ",
+    title: "Lợi nhuận gộp",
   },
   {
     id: 4,
     icon: "/impress-i3.png",
-    sale: "686 tỷ",
-    title: "Tổng tài sản và Vốn chủ sở hữu",
+    sale: "20+ ",
+    title: "Dự án trọng điểm",
   },
   {
     id: 5,
     icon: "/impress-i4.png",
-    sale: "686 tỷ",
-    title: "Tổng tài sản và Vốn chủ sở hữu",
+    sale: "03 văn phòng",
+    title: "Trên các tỉnh thành",
   },
 ];
 
