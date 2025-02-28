@@ -55,7 +55,7 @@ export default function Header() {
     >
       <div
         ref={logoRef}
-        className="header-left max-w-full w-[4.5rem] h-[2.3rem] sm:w-[13.8rem] sm:h-[7.3rem] inline-flex items-end gap-2 transform -translate-y-[200px] opacity-0"
+        className="header-left max-w-full max-sm:!w-[6rem] max-sm:!h-[3rem] sm:w-[13.8rem] sm:h-[7.3rem] inline-flex items-end gap-2 transform -translate-y-[200px] opacity-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
