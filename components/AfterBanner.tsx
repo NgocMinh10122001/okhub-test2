@@ -139,15 +139,15 @@ export default function AfterBanner() {
             tưởng.
           </p>
         </div>
-        <Button className="sm:mt-[5rem] py-0.875 px-6 md:py-1.125 md:px-2.125 w-fit max-w-full h-fit bg-cus-perple rounded-full flex gap-[0.4rem] items-center">
-          <span className="uppercase max-w-full font-inter text-xs md:text-base not-italic font-bold leading-140">
+        <Button className="sm:mt-[5rem] py-0.875 px-6 md:py-1.125 md:px-2.125 w-fit max-w-full h-fit bg-cus-perple hover:bg-orange-700 duration-500 ease-in-out rounded-full flex gap-[0.4rem] items-center">
+          <span className="uppercase max-w-full font-inter text-xs md:text-sm not-italic font-bold leading-140">
             Hành trình của Ami&M
           </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 13 13"
             fill="none"
-            className="!w-3 !h-3 md:!w-4 md:!h-4"
+            className="!w-3 !h-3 md:!w-3 md:!h-3"
           >
             <g clipPath="url(#clip0_15159_2710)">
               <path
@@ -172,44 +172,3 @@ export default function AfterBanner() {
     </div>
   );
 }
-
-//  <svg
-//         xmlns="http://www.w3.org/2000/svg"
-//         viewBox="0 0 1440 320"
-//         className="absolute bottom-[-5%] left-0 right-0"
-//       >
-//         <path
-//           fill="#ffffff"
-//           fill-opacity="1"
-//           d="M0,224L120,234.7C240,245,480,267,720,261.3C960,256,1200,224,1320,208L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-//         ></path>
-//       </svg>
-//       <div className="rainb absolute bottom-[-10] left-0 right-0">
-//         <svg
-//           xmlns="http://www.w3.org/2000/svg"
-//           width="100%"
-//           height="19rem"
-//           viewBox="0 0 1599 319"
-//           fill="none"
-//         >
-//           <g style={{ mixBlendMode: "darken" }} opacity="0.8">
-//             <path
-//               d="M1623 0C1623 125.308 518.667 194.226 -14 210.522V266.5C808.5 351.5 1268.5 324.806 1623 241.5V0Z"
-//               fill="url(#paint0_linear_15159_2682)"
-//             />
-//           </g>
-//           <defs>
-//             <linearGradient
-//               id="paint0_linear_15159_2682"
-//               x1="184.702"
-//               y1="159.29"
-//               x2="1468.36"
-//               y2="364.408"
-//               gradientUnits="userSpaceOnUse"
-//             >
-//               <stop stopColor="#328AE2" />
-//               <stop offset="1" stop-color="#FF0D39" />
-//             </linearGradient>
-//           </defs>
-//         </svg>
-//       </div>
