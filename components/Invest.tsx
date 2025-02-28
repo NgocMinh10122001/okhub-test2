@@ -21,8 +21,8 @@ export default function Invest() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: investCon.current,
-        start: "top center",
-        end: "center center",
+        start: "center center",
+        end: "bottom center",
         markers: false,
         scrub: true,
       },

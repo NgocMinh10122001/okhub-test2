@@ -21,8 +21,8 @@ export default function Cooperate() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: cooperateCon.current,
-        start: "top center",
-        end: "30% center",
+        start: "center center",
+        end: "65% center",
         markers: false,
         scrub: true,
       },
