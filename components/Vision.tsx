@@ -44,7 +44,7 @@ export default function Vision() {
   return (
     <div
       ref={visionCon}
-      className="vs w-full bg-white min-h-[43rem] sm:min-h-[31rem]  md:px-6.2 relative flex flex-col items-center justify-center -z-10"
+      className="vs w-full  min-h-[43rem] sm:min-h-[31rem]  md:px-6.2 relative flex flex-col items-center justify-center "
     >
       <div className="map  max-w-full px-4 md:px-0 w-full h-[45rem] md:w-[62.5rem] md:h-[35rem]  absolute max-sm:top-0 max-sm:left-0 max-sm:bottom-0 max-sm:right-0  sm:left-1/2 transform sm:-translate-x-1/2 ">
         <Image

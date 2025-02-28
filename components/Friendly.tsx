@@ -40,16 +40,16 @@ export default function Friendly() {
         alt=""
         fill
         style={{ objectFit: "cover", objectPosition: "center" }}
-        className="absolute top-0 left-0 right-0 bottom-0 -z-10"
+        className="absolute top-0 left-0 right-0 bottom-0 "
       />
       <div className="absolute bottom-0 left-0 right-0 h-[28rem] blur w-[1700px] translate-y-[20px]"></div>
       <p
         ref={text}
-        className=" text-cus-neutrol  max-sm:px-[2.75rem] sm:px-44 font-quicksand text-xl sm:text-2.5 not-italic font-bold leading-[125%] sm:leading-150 tracking-0.01 sm:-tracking-0.0225 text-center w-[80rem] pb-[5rem]"
+        className="relative z-10 text-cus-neutrol  max-sm:px-[2.75rem] sm:px-44 font-quicksand text-xl sm:text-2.5 not-italic font-bold leading-[125%] sm:leading-150 tracking-0.01 sm:-tracking-0.0225 text-center w-[80rem] pb-[5rem]"
       >
         “Tình bằng hữu, sự chính trực và tinh thần tự nâng tầm hun đúc nên tinh
         thần của một tổ chức <br className="max-sm:hidden" />{" "}
-        <span ref={textSub} className="opacity-50">
+        <span ref={textSub} className="opacity-20">
           không ngừng học tập để kiến tạo giá trị.
         </span>
         ”
