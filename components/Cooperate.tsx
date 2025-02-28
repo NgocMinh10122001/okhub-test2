@@ -1,6 +1,5 @@
 "use client";
 
-import { investData } from "@/data/mock";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";

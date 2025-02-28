@@ -5,13 +5,10 @@ import { Button } from "@/components/ui/button";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 export default function AfterBanner() {
   const handRef = useRef(null);
   const afterBanner = useRef(null);
   const textBox = useRef(null);
-  const bg = useRef(null);
 
   useGSAP(() => {
     const tl = gsap.timeline({
