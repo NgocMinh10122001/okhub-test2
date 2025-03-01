@@ -175,7 +175,7 @@ export default function Mission() {
                 width={720}
                 height={480}
                 style={{ objectFit: "cover" }}
-                className={`rounded-md overflow-hidden max-w-[65%] w-full h-full opacity-0 roll-img ${
+                className={`rounded-2xl overflow-hidden max-w-[60%] w-full h-full opacity-0 roll-img ${
                   item.id === "1" ? "" : "max-sm:hidden"
                 }`}
               />
